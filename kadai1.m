@@ -30,6 +30,6 @@ IMG2 = imresize(IMG,16,'box'); % 画像の拡大
 imagesc(IMG2); axis image; % 画像の表示
 pause; % 一時停止
 
-IMG = imresize(IMG,0.5); % 画像の縮小
+IMG = imresize(IMG2,0.5); % 画像の縮小
 IMG2 = imresize(IMG,32,'box'); % 画像の拡大
 imagesc(IMG2); axis image; % 画像の表示
