@@ -25,5 +25,5 @@ IMG = IMG0 + IMG1 + IMG2;
 imagesc(IMG); colormap(gray); colorbar;  axis image;
 
 % ８階調については，各自検討してください．
-% じょうきのき方ではあまりスマートではない．
+% 上記の方法ではない．
 % 複数の画像を用いての疑似輪郭の発生条件？ての考察をおこなう
