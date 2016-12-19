@@ -1,27 +1,30 @@
 ﻿# レポート課題３ 閾値処理
  
-「penguin」を原画像とする．閾値を４パターン設定し，閾値処理した画像を生成する．  
-ある閾値を定めて，各画素ごとの値が閾値を上回っていれば白、下回っていれば黒に置き換えることによって閾値処理を行う．  
+「penguin」を原画像とする．閾値を４パターン設定し，閾値処理した画像を生成する．  
+![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin2_1.png?raw=true)  
+図１ 原画像  
+
+ある閾値を定めて，各画素ごとの値が閾値を上回っていれば白、下回っていれば黒に置き換えることによって閾値処理を行う．  
 
 初めに，閾値を64とした時の結果を図１に示す．  
 
-![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin3_1.png?raw=true)  
-図１ 閾値を64とした時の画像  
+![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin3_1.png?raw=true)  
+図２ 閾値を64とした時の画像  
 
 次に，閾値を96とした時の結果を図２に示す．  
 
-![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin3_2.png?raw=true)  
-図２ 閾値を96とした時の画像  
+![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin3_2.png?raw=true)  
+図３ 閾値を96とした時の画像  
 
 次に，閾値を128とした時の結果を図３に示す．  
 
-![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin3_3.png?raw=true)  
-図３ 閾値を128とした時の画像  
+![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin3_3.png?raw=true)  
+図４ 閾値を128とした時の画像  
 
 次に，閾値を196とした時の結果を図４に示す．  
 
-![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin3_4.png?raw=true)  
-図４ 閾値を196とした時の画像  
+![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin3_4.png?raw=true)  
+図５ 閾値を196とした時の画像  
 
 上記４つの図は一つの閾値によって閾値処理を行っているため，すべての結果は2値画像となっているが，2値画像には以下のような特徴がある．  
 1．情報量が少なく，高速処理，低コスト処理に適する.    
@@ -31,4 +34,4 @@
 閾値の決め方には主に以下のものがある．  
 ・モード法　・Ｐ－タイル法　・判別分析法　・微分ヒストグラム法　・ラプラシアンヒストグラム法　・移動平均法　・部分画像分割法  
 
-図１や２は原画像に近い結果が表示されているが，３や４は大きく異なった結果が示されている．今回は閾値を適当な値でとったが，きちんとした場では，上記に挙げた方法を用いて適した閾値を設定することが必要である．
+図１～３は原画像に近い結果が表示されているが，４は大きく異なった結果が示されている．今回は閾値を適当な値でとったが，きちんとした場では，上記に挙げた方法を用いて適した閾値を設定することが必要である．
