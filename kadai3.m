@@ -5,7 +5,7 @@
 
 clear; % 変数のオールクリア
 
-ORG=imread('https://www.pakutaso.com/shared/img/thumb/IS107140615_TP_V.jpg); % 原画像の入力
+ORG=imread('penguin.png'); % 原画像の入力
 ORG= rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換
 
 imagesc(ORG); colormap(gray); colorbar; % 画像の表示
@@ -25,5 +25,3 @@ pause;
 
 IMG = ORG > 192;
 imagesc(IMG); colormap(gray); colorbar;
-
-% 閾値をどのようにとるかも考察となりうる．人にとって（見た目）とコンピュータにとって（処理）の閾値の良さの違い．
