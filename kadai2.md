@@ -4,7 +4,7 @@
 
 以下の文によって原画像を読み込んだのちに，rgb2garyによってRGBイメージを白黒濃淡画像に変換した結果を図１に示す．  
 
-ORG=imread('penguin.png'); % 原画像の入力 
+ORG=imread('penguin.png'); % 原画像の入力  
 ORG = rgb2gray(ORG); colormap(gray); colorbar;  
 imagesc(ORG); axis image; % 画像の表示  
 
