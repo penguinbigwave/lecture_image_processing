@@ -1,6 +1,6 @@
 ﻿# レポート課題２
 
-標準画像「penguin.png」を原画像とする．  
+標準画像「penguin」を原画像とする．  
 
 ORG=imread('penguin.png'); % 原画像の入力  
 ORG = rgb2gray(ORG); colormap(gray); colorbar;  
@@ -8,7 +8,7 @@ imagesc(ORG); axis image; % 画像の表示  
 
 によって原画像を読み込んだのちに，rgb2garyによってRGBイメージをグレースケールに変換した結果を図１に示す．  
 
-![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin2_1.png?raw=true)  
+![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin2_1.png?raw=true)  
 図１ 原画像(グレースケール)  
 
 次に，以下の文によって画像を２階調に変換した結果を図２に示す．  
