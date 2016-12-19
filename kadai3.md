@@ -1,7 +1,7 @@
 ﻿# レポート課題３ 閾値処理
  
 「penguin」を原画像とする．閾値を４パターン設定し，閾値処理した画像を生成する．  
-![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin2_1.png?raw=true)  
+![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin2_1.png?raw=true)  
 図１ 原画像  
 
 ある閾値を定めて，各画素ごとの値が閾値を上回っていれば白、下回っていれば黒に置き換えることによって閾値処理を行う．  
