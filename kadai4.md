@@ -2,7 +2,7 @@
  
  「penguin」を原画像とする.この画像の画素の濃度ヒストグラムを生成する.  
   
- ![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin2_1.png?raw=true)  
+ ![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin1_1.png?raw=true)  
  図１ 原画像  
  
  imhist(ORG); によってヒストグラムを生成した結果を図２に示す．  
