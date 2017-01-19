@@ -18,13 +18,13 @@
 ![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin10_2.png?raw=true)  
 図３ プレウィット法によるエッジ抽出の結果  
   
-次に，ソベル法によってエッジ抽出を行った結果を図4に示す．  
+次に，ソベル法によってエッジ抽出を行った結果を図4に示す．  
     IMG = edge(ORG,'sobel'); % エッジ抽出（ソベル法）  
   
 ![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin10_3.png?raw=true)  
 図４ ソベル法によるエッジ抽出の結果  
   
-最後に，キャニー法によってエッジ抽出を行った結果を図５に示す．  
+最後に，キャニー法によってエッジ抽出を行った結果を図５に示す．  
     IMG = edge(ORG,'canny'); % エッジ抽出（キャニー法）  
   
 ![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin10_4.png?raw=true)  
@@ -38,9 +38,9 @@
     ⊿<sub>y</sub>f(i,j)=f(i-1,j-1)+f(i,j-1)+f(i+1,j-1)-{f(i-1,j+1)+f(i,j+1)+f(i+1,j+1)}  
   
 ２．ソベル法  
- プレウィットのオペレータにおいて，中心画素の影響を強調した処理．具体的には，次式で定義されるオペレータを処理する．  
-    ⊿<sub>y</sub>f(i,j)=f(i-1,j-1)+2f(i,j-1)+f(i+1,j-1)-{f(i-1,j+1)+2f(i,j+1)+f(i+1,j+1)}  
+ プレウィットのオペレータにおいて，中心画素の影響を強調した処理．具体的には，次式で定義されるオペレータを処理する．  
+    ⊿<sub>y</sub>f(i,j)=f(i-1,j-1)+2f(i,j-1)+f(i+1,j-1)-{f(i-1,j+1)+2f(i,j+1)+f(i+1,j+1)}  
     ⊿<sub>y</sub>f(i,j)=f(i-1,j-1)+2f(i,j-1)+f(i+1,j-1)-{f(i-1,j+1)+2f(i,j+1)+f(i+1,j+1)}
   
 ３．キャニー法  
-Jphn F.Cannyが考案した方法．ソベル法と同じくらいによく使われている方法である．事前条件が特殊でない限り，キャニー法よりも性能の良いエッジ検出法を見つけることは難しい．
+ John F.Cannyが考案した方法．ソベル法と同じくらいによく使われている方法である．事前条件が特殊でない限り，キャニー法よりも性能の良いエッジ検出法を見つけることは難しい．
