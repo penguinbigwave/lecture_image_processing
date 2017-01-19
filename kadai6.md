@@ -1,7 +1,7 @@
 ﻿# レポート課題6 画像の２値化  
 
 原画像「penguin」の2値化を行う．  
-![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin2_1.png?raw=true)  
+![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin1_1.png?raw=true)  
 図１ 原画像  
 
 しきい値を128と定めたときの2値化の結果が図２で，ディザ法を用いて行った2値化の結果が図３である．  
