@@ -1,8 +1,8 @@
 ﻿# レポート課題10 画像のエッジ抽出  
   
 様々な手法を用いて画像のエッジ抽出を行う．抽出元の画像は「penguin」とする．  
-  
-ORG = imread('penguin.png'); % 原画像の入力  
+  
+    ORG = imread('penguin.png'); % 原画像の入力  
   
 ![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin1_1.png?raw=true)  
 図１ 原画像  
@@ -13,19 +13,19 @@ ORG = imread('penguin.png'); % 原画像の入力
 図２ 白黒濃淡画像  
   
 はじめに，プレウィット法によってエッジ抽出を行った結果を図３に示す．  
-IMG = edge(ORG,'prewitt'); % エッジ抽出（プレウィット法）  
+    IMG = edge(ORG,'prewitt'); % エッジ抽出（プレウィット法）  
   
 ![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin10_2.png?raw=true)  
 図３ プレウィット法によるエッジ抽出の結果  
   
-次に，ソベル法によってエッジ抽出を行った結果を図4に示す．  
-IMG = edge(ORG,'sobel'); % エッジ抽出（ソベル法）  
+次に，ソベル法によってエッジ抽出を行った結果を図4に示す．  
+    IMG = edge(ORG,'sobel'); % エッジ抽出（ソベル法）  
   
 ![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin10_3.png?raw=true)  
 図４ ソベル法によるエッジ抽出の結果  
   
-最後に，キャニー法によってエッジ抽出を行った結果を図５に示す．  
-IMG = edge(ORG,'canny'); % エッジ抽出（キャニー法）  
+最後に，キャニー法によってエッジ抽出を行った結果を図５に示す．  
+    IMG = edge(ORG,'canny'); % エッジ抽出（キャニー法）  
   
 ![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin10_4.png?raw=true)  
 図５ キャニー法によるエッジ抽出の結果  
@@ -38,9 +38,9 @@ IMG = edge(ORG,'canny'); % エッジ抽出（キャニー法）
     ⊿<sub>y</sub>f(i,j)=f(i-1,j-1)+f(i,j-1)+f(i+1,j-1)-{f(i-1,j+1)+f(i,j+1)+f(i+1,j+1)}  
   
 ２．ソベル法  
- プレウィットのオペレータにおいて，中心画素の影響を強調した処理．具体的には，次式で定義されるオペレータを処理する．  
-    ⊿<sub>y</sub>f(i,j)=f(i-1,j-1)+2f(i,j-1)+f(i+1,j-1)-{f(i-1,j+1)+2f(i,j+1)+f(i+1,j+1)}   
-    ⊿<sub>y</sub>f(i,j)=f(i-1,j-1)+2f(i,j-1)+f(i+1,j-1)-{f(i-1,j+1)+2f(i,j+1)+f(i+1,j+1)}
+ プレウィットのオペレータにおいて，中心画素の影響を強調した処理．具体的には，次式で定義されるオペレータを処理する．  
+    ⊿<sub>y</sub>f(i,j)=f(i-1,j-1)+2f(i,j-1)+f(i+1,j-1)-{f(i-1,j+1)+2f(i,j+1)+f(i+1,j+1)}  
+    ⊿<sub>y</sub>f(i,j)=f(i-1,j-1)+2f(i,j-1)+f(i+1,j-1)-{f(i-1,j+1)+2f(i,j+1)+f(i+1,j+1)}
   
 ３．キャニー法  
 Jphn F.Cannyが考案した方法．ソベル法と同じくらいによく使われている方法である．事前条件が特殊でない限り，キャニー法よりも性能の良いエッジ検出法を見つけることは難しい．
