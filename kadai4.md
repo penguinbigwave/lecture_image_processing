@@ -5,7 +5,7 @@
  ![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin2_1.png?raw=true)  
  図１ 原画像  
  
- imhist構文によってヒストグラムを生成した結果を図２に示す．  
+ imhist(ORG); によってヒストグラムを生成した結果を図２に示す．  
   
  ![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin4_1.png?raw=true)  
  図２ 画素の濃度ヒストグラム  
