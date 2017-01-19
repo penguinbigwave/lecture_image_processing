@@ -2,7 +2,7 @@
  
 「penguin」を原画像として，判別分析法を用いて画像の２値化を行う．  
   
-![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin2_1.png?raw=true)  
+![原画像](https://github.com/penguinbigwave/lecture_image_processing/blob/master/image/penguin1_1.png?raw=true)  
 図１ 原画像  
 
 ２値化を行った結果を図２に示す．  
